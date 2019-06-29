@@ -1,8 +1,8 @@
 var Animal = function(name) {
-    if (!(this instanceof Animal)) {
+    if (!(this === instanceof Animal)) {
+    // if (!(this instanceof Animal)) {
         return new Animal(name);
     }
-    console.log(Animal);
     this.name = name;
     this.toString = function() {
         return 'Animal: ' + this.name;
